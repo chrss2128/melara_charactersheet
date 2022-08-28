@@ -48,6 +48,7 @@
     border: none;
     box-shadow: inset 0 0px 0;
     margin-left: 15px;
+    margin-top: 10px;
   }
 
   .repcontrol[data-groupname="repeating_wounds"] > button.repcontrol_edit
@@ -62,6 +63,7 @@
     border: none;
     box-shadow: inset 0 0px 0;
     margin-right: 15px;
+    margin-top: 10px;
   }
 
   div.class_metadata {
@@ -429,13 +431,15 @@
 
   div.wound_type {
     padding-left: 15px;
+    padding-top: 5px;
   }
 
   div.recovery_div {
     padding-left: 15px;
+    padding-top: 5px;
   }
 
-  select.wound_type {
+  input.wound_type {
     width: 100px;
   }
 
