@@ -1,0 +1,291 @@
+  /* This div style is for roll20 styling only */
+  
+  div.charsheet {
+    width: 900px;
+    height: 1000px;
+  }
+
+  div {
+    position: relative;
+  }
+
+/* begin main sheet styles */
+
+.charsheet {
+    background-image: url("https://cdn.discordapp.com/attachments/941222037899317249/1007067896763129916/char_sheet_1.0.png");
+    background-size: 900px 1000px;
+    /* light-brown parchment texture */
+    /* background-color: #d19e3e;
+    /* light-brown color as fallback, if image doesn't show. 
+    background-repeat: repeat;
+    color: white; */
+
+    
+  }
+
+  div.class_metadata {
+    display: flex;
+    height: 100px;
+    padding-top: 100px;
+    padding-left: 75px;
+  }
+
+  div.character_name {
+    flex: 37%;
+    padding-top: 30px;
+  }
+
+  div.class_specifics {
+    flex: 63%;
+  }
+
+  input#character_name {
+    height: 15px;
+    width: 275px;
+  }
+
+  input#class_specifics {
+    height: 15px;
+  }
+
+  form {
+    margin: 0px;
+  }
+
+  input[name="class"] {
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 55px;
+  }
+
+  input[name="subclass"] {
+    margin-top: 10px;
+    margin-left: 65px;
+    width: 160px;
+  }
+
+  input[name="level"] {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 35px;
+  }
+
+  input[name="race"] {
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 160px;
+  }
+
+  input[name="subrace"] {
+    margin-top: 10px;
+    margin-left: 65px;
+    width: 175px;
+  }
+
+  input[name="alignment"] {
+    margin-top: 10px;
+    margin-left: 265px;
+    width: 175px;
+  }
+
+
+  div.combat_sheet {
+    display: grid;
+    height: 700px;
+
+    grid-template-columns: 130px 230px 265px 280px;
+  }
+
+  div.attribute_column {
+    padding-top: 50px;
+  }
+
+  div.col2 {
+  }
+
+  div.col3 {
+  }
+
+  div.col4 {
+  }
+
+  div.attribute {
+    height: 105px;
+  }
+
+  input#class_attribute {
+    height: 15px;
+    width: 20px;
+    margin-top: 75px;
+    margin-left: 70px;
+  }
+
+  input#class_save_dc {
+    height: 15px;
+    width: 70px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  div.luck_points {
+    height: 90px;
+  }
+
+  div.proficiency_bonus {
+    height: 65px;
+  }
+
+  div.saving_throws {
+    height: 200px;
+  }
+
+  div.combat_maneuvers {
+    height: 180px;
+  }
+
+  div.resources {
+    height: 90px;
+  }
+
+  input#luck {
+    height: 15px;
+    width: 30px;
+    margin-top: 45px;
+    margin-left: 3px;
+  }
+
+  input#proficiency {
+    height: 15px;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 3px;
+  }
+
+
+
+
+  div.init_per_evade {
+    display: flex;
+    height: 105px;
+  }
+
+  div.initiative {
+    flex: 33%;
+  }
+
+  div.perception {
+    flex: 33%;
+  }
+
+  div.evasion {
+    flex: 33%;
+  }
+
+
+  
+  input#init_per_evade {
+    height: 15px;
+    width: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
+  div.hitpoints {
+    display: flex;
+    height: 95px;
+  }
+
+  div.current {
+    flex: 50%;
+  }
+
+  div.maximum {
+    flex: 50%;
+  }
+
+  input#hitpoints {
+    width: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  div.movespeed {
+    display: grid;
+    height: 75px;
+
+    grid-template-columns: 70px 70px 70px 70px;
+  }
+
+  input#movespeed {
+    height: 15px;
+    width: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+
+  div.armor_shield_attributes {
+    display: grid;
+    height: 53px;
+
+    grid-template-columns: 130px 130px;
+  }
+
+  div.armor_attributes {
+    display: grid;
+    height: 20px;
+
+    grid-template-columns: 43px 43px 44px;
+  }
+
+
+  div.shield_attributes {
+    display: grid;
+    height: 20px;
+
+    grid-template-columns: 43px 43px 44px;
+  }
+
+  input#armor_shield_attributes {
+    width: 30px;
+    height: 15px;
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+
+  div.armor_shield_type {
+    display: grid;
+    height: 20px;
+
+    grid-template-columns: 130px 130px;
+  }
+
+  input#armor_shield_type {
+    height: 15px;
+    width: 30px;
+    margin-left: 50px;
+  }
+
+  div.attacks_spells {
+    height: 200px;
+  }
+
+  
+  div.items {
+    height: 200px;
+  }
+
+  div.wounds {
+    height: 200px;
+    background-color: #92a8d1;
+  }
+
+  div.persistent_conditions {
+    height: 200px;
+  }
+
+  div.features_traits {
+    height: 200px;
+  }
+
+  

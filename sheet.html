@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="charsheet">
+        <!-- First row - class metadata-->
+        <div class="class_metadata">
+            <div class="character_name">
+                <form>
+                    <input type="text" id="character_name" name="character_name">
+                </form>
+            </div>
+            <div class="class_specifics">
+                <div class="row_1">
+                    <form>
+                        <input type="text" id="class_specifics" name="class">
+                        <input type="text" id="class_specifics" name="subclass">
+                        <input type="text" id="class_specifics" name="level">
+                    </form>
+                </div>
+                <div class="row_2">
+                    <form>
+                        <input type="text" id="class_specifics" name="race">
+                        <input type="text" id="class_specifics" name="subrace">
+                    </form>
+                </div>
+                <div class="row_3">
+                    <form>
+                        <input type="text" id="class_specifics" name="alignment">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Setup 3 columns for various combata data-->
+
+        <div class="combat_sheet">
+            <div class="attribute_column">
+                <div class="attribute">
+                    <form>
+                        <input type="text" id="class_attribute" name="strength_points">
+                    </form>
+                </div>
+                <div class="attribute">
+                    <form>
+                        <input type="text" id="class_attribute" name="dexterity_points">
+                    </form>
+                </div>
+                <div class="attribute">
+                    <form>
+                        <input type="text" id="class_attribute" name="constitution_points">
+                    </form>
+                </div>
+                <div class="attribute">
+                    <form>
+                        <input type="text" id="class_attribute" name="intelligence_points">
+                    </form>
+                </div>
+                <div class="attribute">
+                    <form>
+                        <input type="text" id="class_attribute" name="wisdom_points">
+                    </form>
+                </div>
+                <div class="attribute">
+                    <form>
+                        <input type="text" id="class_attribute" name="charisma_points">
+                    </form>
+                </div>
+
+                <!-- the below field will probably become expandable-->
+                <div class="attribute">
+                    <form>
+                        <input type="text" id="class_save_dc" name="class_save_dc">
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="col2">
+                <div class="luck_points">
+                    <form>
+                        <input type="text" id="luck" name="luck">
+                    </form>
+                </div>
+                <div class="proficiency_bonus">
+                    <form>
+                        <input type="text" id="proficiency" name="proficiency">
+                    </form>
+                </div>
+                <div class="saving_throws">
+
+                </div>
+                <div class="combat_maneuvers">
+
+                </div>
+                <div class="resources">
+                </div>
+            </div>
+
+
+
+            <div class="col3">
+                <div class="init_per_evade">
+                    <div class="initiative">
+                        <form>
+                            <input type="text" id="init_per_evade" name="initiative">
+                        </form>
+                    </div>
+                    <div class="perception">
+                        <form>
+                            <input type="text" id="init_per_evade" name="perception">
+                        </form>
+                    </div>
+                    <div class="evasion">
+                        <form>
+                            <input type="text" id="init_per_evade" name="evasion">
+                        </form>
+                    </div>
+                </div>
+                <div class="hitpoints">
+                    <div class="current">
+                        <form>
+                            <input type="text" id="hitpoints" name="hitpoints_current">
+                        </form>
+                    </div>
+                    <div class="maximum">
+                        <form>
+                            <input type="text" id="hitpoints" name="hitpoints_maximum">
+                        </form>
+                    </div>
+                </div>
+                <div class="movespeed">
+                    <div class="walk">
+                        <form>
+                            <input type="text" id="movespeed" name="walk">
+                        </form>
+                    </div>
+                    <div class="climb">
+                        <form>
+                            <input type="text" id="movespeed" name="climb">
+                        </form>
+                    </div>
+                    <div class="swim">
+                        <form>
+                            <input type="text" id="movespeed" name="swim">
+                        </form>
+                    </div>
+                    <div class="fly">
+                        <form>
+                            <input type="text" id="movespeed" name="fly">
+                        </form>
+                    </div>
+                </div>
+                <div class="armor_shield">
+                    <div class="armor_shield_attributes">
+                        <div class="armor_attributes">
+                            <div class="armor_current">
+                                <form>
+                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                </form>
+                            </div>
+                            <div class="armor_maximum">
+                                <form>
+                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                </form>
+                            </div>
+                            <div class="armor_tally">
+                                <form>
+                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="shield_attributes">
+                            <div class="shield_current">
+                                <form>
+                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                </form>
+                            </div>
+                            <div class="shield_maximum">
+                                <form>
+                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                </form>
+                            </div>
+                            <div class="shield_tally">
+                                <form>
+                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="armor_shield_type">
+                        <div class="type_armor">
+                            <form>
+                                <input type="text" id="armor_shield_type" name="armor_type">
+                            </form>
+                        </div>
+                        <div class="type_shield">
+                            <form>
+                                <input type="text" id="armor_shield_type" name="shield_type">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="attacks_spells">
+
+                </div>
+                <div class="items">
+
+                </div>
+            </div>
+
+
+
+            <div class="col4">
+                <div class="wounds">
+
+                </div>
+                <div class="persistent_conditions">
+
+                </div>
+                <div class="features_traits">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
