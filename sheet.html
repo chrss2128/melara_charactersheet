@@ -144,12 +144,12 @@
                             <input type="text" id="init_per_evade" name="initiative">
                         </form>
                     </div>
-                    <div class="perception">
+                    <div class="evasion">
                         <form>
                             <input type="text" id="init_per_evade" name="perception">
                         </form>
                     </div>
-                    <div class="evasion">
+                    <div class="perception">
                         <form>
                             <input type="text" id="init_per_evade" name="evasion">
                         </form>
@@ -164,9 +164,11 @@
                     <div class="maximum">
                         <form>
                             <input type="text" id="hitpoints" name="hitpoints_maximum">
+                            <input type="text" id="hitpoints_reductions" name="hitpoints_reductions">
                         </form>
                     </div>
                 </div>
+
                 <div class="movespeed">
                     <div class="walk">
                         <form>
@@ -194,17 +196,17 @@
                         <div class="armor_attributes">
                             <div class="armor_current">
                                 <form>
-                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                    <input type="text" id="armor_shield_attributes" name="max_resistance">
                                 </form>
                             </div>
                             <div class="armor_maximum">
                                 <form>
-                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                    <input type="text" id="armor_shield_attributes" name="current_resistance">
                                 </form>
                             </div>
                             <div class="armor_tally">
                                 <form>
-                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                    <input type="text" id="armor_shield_attributes" name="tallies_resistance">
                                 </form>
                             </div>
                         </div>
@@ -212,17 +214,17 @@
                         <div class="shield_attributes">
                             <div class="shield_current">
                                 <form>
-                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                    <input type="text" id="armor_shield_attributes" name="parry">
                                 </form>
                             </div>
                             <div class="shield_maximum">
                                 <form>
-                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                    <input type="text" id="armor_shield_attributes" name="block">
                                 </form>
                             </div>
                             <div class="shield_tally">
                                 <form>
-                                    <input type="text" id="armor_shield_attributes" name="strength_points">
+                                    <input type="text" id="armor_shield_attributes" name="tallies_shield">
                                 </form>
                             </div>
                         </div>
@@ -262,7 +264,7 @@
                             Recovery:
                         </div>
                     </div>
-                    <fieldset class="repeating_skills">
+                    <fieldset class="repeating_wounds">
                         <div class="wound_and_recovery two_column_div" >
                             <div class="wound_type" >
                                 <select name="attr_wound_type" class="wound_type"> 

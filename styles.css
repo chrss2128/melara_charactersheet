@@ -36,6 +36,34 @@
     
   }
 
+  .repcontrol[data-groupname="repeating_wounds"] > button.repcontrol_add
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012557224230518814/plus.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-left: 15px;
+  }
+
+  .repcontrol[data-groupname="repeating_wounds"] > button.repcontrol_edit
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012556580773965905/lock.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-right: 15px;
+  }
+
   div.class_metadata {
     display: flex;
     height: 100px;
@@ -59,7 +87,15 @@
 
   input[type="text"], textarea {
     background-color: #1f1f1f;
+    color: #FFFFFF
   }
+
+  select {
+    background-color: #1f1f1f;
+    color: #FFFFFF
+  }
+
+
 
   input#class_specifics {
     height: 15px;
@@ -105,12 +141,79 @@
     width: 175px;
   }
 
+  input#hitpoints_reductions {
+    height: 18px;
+  }
+
+  input[name="hitpoints_reductions"] {
+    margin-top: 19px;
+    margin-left: 70px;
+    
+    width: 50px;
+  }
+  input[name="walk"] {
+    margin-left: 15px;
+    
+    width: 50px;
+  }
+  input[name="climb"] {
+    margin-left: 10px;
+    
+    width: 50px;
+  }
+  input[name="swim"] {
+    margin-left: 8px;
+    
+    width: 50px;
+  }
+  input[name="fly"] {
+    margin-left: 3px;
+    
+    width: 50px;
+  }
+
+  input[name="max_resistance"] {
+    margin-left: 15px;
+    
+    width: 13px;
+  }
+
+  input[name="current_resistance"] {
+    margin-left: 3px;
+    
+    width: 33px;
+  }
+
+  input[name="tallies_resistance"] {
+    margin-left: 3px;
+    
+    width: 47px;
+  }
+
+  input[name="parry"] {
+    margin-left: 3px;
+    
+    width: 30px;
+  }
+
+  input[name="block"] {
+    margin-left: 3px;
+    
+    width: 33px;
+  }
+
+  input[name="tallies_shield"] {
+    margin-left: 3px;
+    
+    width: 35px;
+  }
+
 
   div.combat_sheet {
     display: grid;
     height: 700px;
 
-    grid-template-columns: 115px 230px 250px 260px;
+    grid-template-columns: 115px 230px 260px 260px;
   }
 
   div.attribute_column {
@@ -207,15 +310,15 @@
 
   
   input#init_per_evade {
-    height: 15px;
-    width: 20px;
-    margin-top: 50px;
-    margin-left: 30px;
+    height: 40px;
+    width: 60px;
+    margin-top: 65px;
+    margin-left: 20px;
   }
 
   div.hitpoints {
     display: flex;
-    height: 95px;
+    height: 125px;
   }
 
   div.current {
@@ -227,8 +330,8 @@
   }
 
   input#hitpoints {
-    width: 30px;
-    margin-top: 40px;
+    width: 100px;
+    margin-top: 55px;
     margin-left: 20px;
   }
 
@@ -236,29 +339,29 @@
     display: grid;
     height: 75px;
 
-    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-columns: 66px 66px 66px 66px;
   }
 
   input#movespeed {
-    height: 15px;
-    width: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
+    height: 25px;
+    width: 50px;
+    margin-top: 50px;
   }
 
 
   div.armor_shield_attributes {
     display: grid;
-    height: 53px;
+    height: 10px;
 
-    grid-template-columns: 130px 130px;
+    margin-top: 60px;
+    grid-template-columns: 140px 130px;
   }
 
   div.armor_attributes {
     display: grid;
     height: 20px;
 
-    grid-template-columns: 43px 43px 44px;
+    grid-template-columns: 30px 40px 44px;
   }
 
 
@@ -266,27 +369,24 @@
     display: grid;
     height: 20px;
 
-    grid-template-columns: 43px 43px 44px;
+    grid-template-columns: 35px 40px 44px;
   }
 
   input#armor_shield_attributes {
-    width: 30px;
     height: 15px;
-    margin-top: 35px;
-    margin-left: 10px;
   }
 
   div.armor_shield_type {
     display: grid;
-    height: 20px;
 
     grid-template-columns: 130px 130px;
   }
 
   input#armor_shield_type {
-    height: 15px;
-    width: 30px;
-    margin-left: 50px;
+    height: 10px;
+    width: 80px;
+    margin-left: 40px;
+    margin-top: 10px;
   }
 
   div.attacks_spells {
@@ -303,7 +403,8 @@
     border-style: outset inset inset outset;
     border-color: grey;
     border-radius: 10px;
-
+    margin-left: 10px;
+    margin-top: 30px;
   }
 
   div.persistent_conditions {
