@@ -1,9 +1,22 @@
   /* This div style is for roll20 styling only */
+
+  @import url('https://fonts.googleapis.com/css?family=Italiana&display=swap');
   
-  div.charsheet {
-    width: 900px;
-    height: 1000px;
+  body {
+    /*font-family: 'Silkscreen';*/
+    font-family: 'Italiana';
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    /*font-weight: 700;*/
+    color: #ffffff;
   }
+  div.charsheet {
+    background-image: url("https://cdn.discordapp.com/attachments/941222037899317249/1013296582931779665/char_sheet_blank.png");
+    width: 875px;
+    height: 1080px;
+  }
+
 
   div {
     position: relative;
@@ -12,8 +25,8 @@
 /* begin main sheet styles */
 
 .charsheet {
-    background-image: url("https://cdn.discordapp.com/attachments/941222037899317249/1007067896763129916/char_sheet_1.0.png");
-    background-size: 900px 1000px;
+    
+    /*background-size: 900px 1000px; (/
     /* light-brown parchment texture */
     /* background-color: #d19e3e;
     /* light-brown color as fallback, if image doesn't show. 
@@ -26,8 +39,8 @@
   div.class_metadata {
     display: flex;
     height: 100px;
-    padding-top: 100px;
-    padding-left: 75px;
+    padding-top: 75px;
+    padding-left: 25px;
   }
 
   div.character_name {
@@ -40,8 +53,12 @@
   }
 
   input#character_name {
-    height: 15px;
-    width: 275px;
+    height: 30px;
+    width: 225px;
+  }
+
+  input[type="text"], textarea {
+    background-color: #1f1f1f;
   }
 
   input#class_specifics {
@@ -53,38 +70,38 @@
   }
 
   input[name="class"] {
-    margin-top: 10px;
-    margin-left: 40px;
-    width: 55px;
+    margin-top: 12px;
+    margin-left: 55px;
+    width: 60px;
   }
 
   input[name="subclass"] {
-    margin-top: 10px;
-    margin-left: 65px;
+    margin-top: 12px;
+    margin-left: 80px;
     width: 160px;
   }
 
   input[name="level"] {
-    margin-top: 10px;
-    margin-left: 50px;
+    margin-top: 12px;
+    margin-left: 60px;
     width: 35px;
   }
 
   input[name="race"] {
-    margin-top: 10px;
-    margin-left: 35px;
+    margin-top: 15px;
+    margin-left: 53px;
     width: 160px;
   }
 
   input[name="subrace"] {
     margin-top: 10px;
-    margin-left: 65px;
+    margin-left: 90px;
     width: 175px;
   }
 
   input[name="alignment"] {
-    margin-top: 10px;
-    margin-left: 265px;
+    margin-top: 15px;
+    margin-left: 300px;
     width: 175px;
   }
 
@@ -93,7 +110,7 @@
     display: grid;
     height: 700px;
 
-    grid-template-columns: 130px 230px 265px 280px;
+    grid-template-columns: 115px 230px 250px 260px;
   }
 
   div.attribute_column {
@@ -110,14 +127,14 @@
   }
 
   div.attribute {
-    height: 105px;
+    height: 115px;
   }
 
   input#class_attribute {
-    height: 15px;
-    width: 20px;
-    margin-top: 75px;
-    margin-left: 70px;
+    height: 30px;
+    width: 60px;
+    margin-top: 35px;
+    margin-left: 20px;
   }
 
   input#class_save_dc {
@@ -137,6 +154,12 @@
 
   div.saving_throws {
     height: 200px;
+    width: 75px;
+    margin-left: 5px;
+    margin-top: 40px;
+  }
+  div.strength_saving_throw {
+    margin-bottom: 6px;
   }
 
   div.combat_maneuvers {
@@ -148,17 +171,17 @@
   }
 
   input#luck {
-    height: 15px;
-    width: 30px;
-    margin-top: 45px;
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
     margin-left: 3px;
   }
 
   input#proficiency {
-    height: 15px;
-    width: 30px;
-    margin-top: 15px;
-    margin-left: 3px;
+    height: 30px;
+    width: 35px;
+    margin-top: 20px;
+    margin-left: 8px;
   }
 
 
@@ -276,8 +299,11 @@
   }
 
   div.wounds {
-    height: 200px;
-    background-color: #92a8d1;
+    /* background-color: #92a8d1; */
+    border-style: outset inset inset outset;
+    border-color: grey;
+    border-radius: 10px;
+
   }
 
   div.persistent_conditions {
@@ -288,4 +314,49 @@
     height: 200px;
   }
 
-  
+  div.two_column_div {
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+  }
+
+  div.three_column_div {
+    display: grid;
+
+    grid-template-columns: 33% 33% 33%
+  }
+
+  div.wound_type {
+    padding-left: 15px;
+  }
+
+  div.recovery_div {
+    padding-left: 15px;
+  }
+
+  select.wound_type {
+    width: 100px;
+  }
+
+  input.recovery {
+    width: 100px;
+  }
+
+  .center_text {
+    text-align: center;
+  }
+
+  div.no_prof {
+    background-image: url("https://cdn.discordapp.com/attachments/941222037899317249/1013325192405188748/empty_box.png");
+    
+  }
+
+  div.half_prof {
+    background-image: url("https://cdn.discordapp.com/attachments/941222037899317249/1013325192078036992/half_box.png");
+    
+  }
+
+  div.full_prof {
+    background-image: url("https://cdn.discordapp.com/attachments/941222037899317249/1013325191708942396/full_box.png");
+    
+  }
