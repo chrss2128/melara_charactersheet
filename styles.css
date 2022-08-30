@@ -96,6 +96,36 @@
     margin-top: 10px;
   }
 
+  .repcontrol[data-groupname="repeating_resources"] > button.repcontrol_add
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012557224230518814/plus.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  .repcontrol[data-groupname="repeating_resources"] > button.repcontrol_edit
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012556580773965905/lock.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+
   div.class_metadata {
     display: flex;
     height: 100px;
@@ -245,7 +275,7 @@
     display: grid;
     height: 700px;
 
-    grid-template-columns: 115px 230px 260px 260px;
+    grid-template-columns: 115px 230px 260px 270px;
   }
 
   div.attribute_column {
@@ -299,10 +329,6 @@
 
   div.combat_maneuvers {
     height: 180px;
-  }
-
-  div.resources {
-    height: 90px;
   }
 
   input#luck {
@@ -437,6 +463,7 @@
     border-radius: 10px;
     margin-left: 10px;
     margin-top: 30px;
+    padding: 5px;
   }
 
   div.persistent_conditions {
@@ -445,6 +472,16 @@
     border-radius: 10px;
     margin-left: 10px;
     margin-top: 30px;
+    padding: 5px;
+  }
+
+  div.resources {
+    border-style: outset inset inset outset;
+    border-color: grey;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 5px;
   }
 
   div.features_traits {
@@ -498,6 +535,15 @@
     width: 100px;
   }
 
+  input[type="text"].resource_input_box {
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+
+
   input.recurrence_interval {
     width: 100px;
   }
@@ -519,4 +565,10 @@
   div.full_prof {
     background-image: url("https://cdn.discordapp.com/attachments/941222037899317249/1013325191708942396/full_box.png");
     
+  }
+
+  div.resources_box {
+    background-image: url("https://cdn.discordapp.com/attachments/1013705882103709706/1014001852561506394/class_resource-cropped.png");
+    width: 249px;
+    height: 69px;
   }
