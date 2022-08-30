@@ -128,7 +128,30 @@
                         <img src="https://cdn.discordapp.com/attachments/941222037899317249/1013325191708942396/full_box.png" alt="Girl in a jacket" width="20" height="20">
                     </div>
                 </div>
+
                 <div class="combat_maneuvers">
+                    <div class="two_column_div">
+                        <div name="combat_maneuvers_name_header" class="center_text">
+                            Name:
+                        </div>
+                        <div name="combat_maneuvers_bonus_header" class="center_text">
+                            Bonus:
+                        </div>
+                    </div>
+                    <fieldset class="repeating_combat_maneuvers">
+                        <div class="two_column_div" >
+                            <div class="combat_maneuver_name" >
+                                <input type="text" name="combat_maneuver_name" class="combat_maneuver_name" value="">
+                            </div>
+                            <div class="combat_maneuver_bonus" >
+                                <input type="text" name="combat_maneuver_bonus" class="combat_maneuver_bonus" value="">
+                            </div>
+                        </div>
+                      </fieldset>
+                      <div name="persistent_condition_footer" class="center_text">
+                        Combat Maneuvers
+                      </div>
+
 
                 </div>
             </div>
@@ -242,11 +265,59 @@
                         </div>
                     </div>
                 </div>
-                <div class="attacks_spells">
+                <div class="attacks_and_spells">
+                    <div class="three_column_div">
+                        <div name="attacks_and_spells_name_header" class="center_text">
+                            Name
+                        </div>
+                        <div name="attacks_and_spells_bonus_header" class="center_text">
+                            Attack Bonus
+                        </div>
+                        <div name="attacks_and_spells_damage_header" class="center_text">
+                            Damage
+                        </div>
+                    </div>
+                    <fieldset class="repeating_attacks_and_spells">
+                        <div class="three_column_div_attacks_and_spells" >
+                            <div class="attacks_and_spells_name" >
+                                <input type="text" name="attacks_and_spells_name" class="attacks_and_spells_name" value="">
+                            </div>
+                            <div class="attacks_and_spells_bonus" >
+                                <input type="text" name="attacks_and_spells_bonus" class="attacks_and_spells_bonus" value="">
+                            </div>
+                            <div class="attacks_and_spells_damage" >
+                                <input type="text" name="attacks_and_spells_damage" class="attacks_and_spells_damage" value="">
+                            </div>
+                        </div>
+                      </fieldset>
+                      <div name="attacks_and_spells_footer" class="center_text">
+                        Attacks and Spells
+                      </div>
+
 
                 </div>
                 <div class="items">
-
+                    <div class="center_text">
+                        Items
+                    </div>
+                    <div class="two_column_div">
+                        <div name="items_name_header" class="center_text">
+                            Name:
+                        </div>
+                        <div name="items_quantity_header" class="center_text">
+                            Quantity
+                        </div>
+                    </div>
+                    <fieldset class="repeating_items">
+                        <div class="two_column_div_items" >
+                            <div class="items_name" >
+                                <input type="text" name="items_name" class="items_name" value="">
+                            </div>
+                            <div class="items_quantity" >
+                                <input type="text" name="items_quantity" class="items_quantity" value="">
+                            </div>
+                        </div>
+                      </fieldset>
                 </div>
             </div>
 
@@ -311,17 +382,16 @@
                     <fieldset class="repeating_resources">
                         <div class="two_column_div resources_box" >
                             <div class="resource_box" >
-                                
                                 <input type="text" name="class_resource" class="resource_input_box" value="">
-                                
                             </div>
                             <div class="resource_box" >
-                                
                                 <input type="text" name="other_resource" class="resource_input_box" value="">
-                                
                             </div>
                         </div>
                       </fieldset>
+                      <div name="resources_footer" class="center_text">
+                        Resources
+                      </div>
                 </div>
 
 

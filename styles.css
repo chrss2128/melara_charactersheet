@@ -126,6 +126,96 @@
     margin-top: 10px;
   }
 
+  .repcontrol[data-groupname="repeating_combat_maneuvers"] > button.repcontrol_add
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012557224230518814/plus.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  .repcontrol[data-groupname="repeating_combat_maneuvers"] > button.repcontrol_edit
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012556580773965905/lock.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+
+  .repcontrol[data-groupname="repeating_attacks_and_spells"] > button.repcontrol_add
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012557224230518814/plus.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  .repcontrol[data-groupname="repeating_attacks_and_spells"] > button.repcontrol_edit
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012556580773965905/lock.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+
+  .repcontrol[data-groupname="repeating_items"] > button.repcontrol_add
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012557224230518814/plus.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  .repcontrol[data-groupname="repeating_items"] > button.repcontrol_edit
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012556580773965905/lock.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+
   div.class_metadata {
     display: flex;
     height: 100px;
@@ -327,9 +417,7 @@
     margin-bottom: 6px;
   }
 
-  div.combat_maneuvers {
-    height: 180px;
-  }
+  
 
   input#luck {
     height: 40px;
@@ -447,15 +535,6 @@
     margin-top: 10px;
   }
 
-  div.attacks_spells {
-    height: 200px;
-  }
-
-  
-  div.items {
-    height: 200px;
-  }
-
   div.wounds {
     /* background-color: #92a8d1; */
     border-style: outset inset inset outset;
@@ -471,7 +550,34 @@
     border-color: grey;
     border-radius: 10px;
     margin-left: 10px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  div.combat_maneuvers {
+    border-style: outset inset inset outset;
+    border-color: grey;
+    border-radius: 10px;
+    margin-left: 0px;
     margin-top: 30px;
+    padding: 5px;
+  }
+
+  div.attacks_and_spells {
+    border-style: outset inset inset outset;
+    border-color: grey;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: 30px;
+    padding: 5px;
+  }
+
+  div.items {
+    border-style: outset inset inset outset;
+    border-color: grey;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: 5px;
     padding: 5px;
   }
 
@@ -480,7 +586,7 @@
     border-color: grey;
     border-radius: 10px;
     margin-left: 10px;
-    margin-top: 30px;
+    margin-top: 5px;
     padding: 5px;
   }
 
@@ -494,10 +600,22 @@
     grid-template-columns: 50% 50%;
   }
 
+  div.two_column_div_items {
+    display: grid;
+
+    grid-template-columns: 85% 15%;
+  }
+
   div.three_column_div {
     display: grid;
 
     grid-template-columns: 33% 33% 33%
+  }
+
+  div.three_column_div_attacks_and_spells {
+    display: grid;
+
+    grid-template-columns: 60% 20% 20%
   }
 
   div.wound_type {
@@ -518,6 +636,42 @@
     width: 100px;
   }
 
+  div.combat_maneuver_name {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  input.combat_maneuver_name {
+    width: 100px;
+  }
+
+  div.attacks_and_spells_name {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  input.attacks_and_spells_name {
+    width: 140px;
+  }
+
+  div.items_name {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  input.items_name {
+    width: 200px;
+  }
+
+  div.items_quantity {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  input.items_quantity {
+    width: 30px;
+  }
+
 
   div.recovery_div {
     padding-left: 15px;
@@ -529,11 +683,39 @@
     padding-top: 5px;
   }
 
+  div.combat_maneuver_bonus {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  div.attacks_and_spells_bonus {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  input.attacks_and_spells_bonus {
+    width: 40px;
+  }
+
+  div.attacks_and_spells_damage {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  input.attacks_and_spells_damage {
+    width: 40px;
+  }
   
 
   input.recovery {
     width: 100px;
   }
+
+  input.combat_maneuver_bonus {
+    width: 100px;
+  }
+
+  
 
   input[type="text"].resource_input_box {
     width: 100px;
