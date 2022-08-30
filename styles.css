@@ -66,6 +66,36 @@
     margin-top: 10px;
   }
 
+  .repcontrol[data-groupname="repeating_persistent_conditions"] > button.repcontrol_add
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012557224230518814/plus.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  .repcontrol[data-groupname="repeating_persistent_conditions"] > button.repcontrol_edit
+  {
+    /*opacity: 0;*/
+    background: url('https://cdn.discordapp.com/attachments/941222037899317249/1012556580773965905/lock.png');
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    padding: 0px;
+    border: none;
+    box-shadow: inset 0 0px 0;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+
   div.class_metadata {
     display: flex;
     height: 100px;
@@ -410,7 +440,11 @@
   }
 
   div.persistent_conditions {
-    height: 200px;
+    border-style: outset inset inset outset;
+    border-color: grey;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
   }
 
   div.features_traits {
@@ -434,16 +468,37 @@
     padding-top: 5px;
   }
 
+  input.wound_type {
+    width: 100px;
+  }
+
+  div.persistent_condition_type {
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+
+  input.persistent_condition_type {
+    width: 100px;
+  }
+
+
   div.recovery_div {
     padding-left: 15px;
     padding-top: 5px;
   }
 
-  input.wound_type {
+  div.recurrence_interval_div {
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+
+  
+
+  input.recovery {
     width: 100px;
   }
 
-  input.recovery {
+  input.recurrence_interval {
     width: 100px;
   }
 
