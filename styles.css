@@ -606,10 +606,16 @@
     grid-template-columns: 50% 50%;
   }
 
-  div.two_column_div_items {
+  div.three_column_div_items_header {
     display: grid;
 
-    grid-template-columns: 85% 15%;
+    grid-template-columns: 60% 25% 15%;
+  }
+
+  div.three_column_div_items {
+    display: grid;
+
+    grid-template-columns: 70% 15% 15%;
   }
 
   div.three_column_div {
@@ -666,7 +672,7 @@
   }
 
   input.items_name {
-    width: 200px;
+    width: 160px;
   }
 
   div.items_quantity {
@@ -676,6 +682,23 @@
 
   input.items_quantity {
     width: 30px;
+  }
+
+  div.items_bulk {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  input.items_bulk {
+    width: 30px;
+  }
+
+  input.items_total_bulk {
+    width: 40px;
+  }
+
+  div.items_bulk_total {
+    margin-left: 15%
   }
 
 
