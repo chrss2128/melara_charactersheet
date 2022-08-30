@@ -591,7 +591,13 @@
   }
 
   div.features_traits {
-    height: 200px;
+    border-style: outset inset inset outset;
+    border-color: grey;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    height: 300px;
   }
 
   div.two_column_div {
